@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Task 3</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        let a = prompt("Введите целое число");
+        let b = prompt("Введите еще одно целое число");
+        let c = a - b;
+        let d = a * b;
+        let f = +a + +b;
+    
+            if(a >= 0 && b >= 0) {
+               alert("Разность чисел: " + c);  
+            }
+        
+            else if(a < 0 && b < 0) {
+               alert("Произведение чисел: " + d); 
+            }
+        
+            else if(a < 0 && b >= 0 || a >= 0 && b < 0) {
+                alert("Сумма чисел: " + f);
+            }
+
+       
+        </script>
+</body>
+
+</html>
