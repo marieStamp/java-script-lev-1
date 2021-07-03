@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1.1</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+
+        function Product(name, price) {
+            this.name = name;
+            this.price = price;
+            this.make25PercentDiscount = function (discount) {
+                this.price = this.price - (this.price / 100 * discount);
+            };
+        }
+
+        const products = [
+            new Product("item1", 250),
+            new Product("item2", 600),
+            new Product("item3", 960)
+        ];
+
+        for (let product of products) {
+            product.make25PercentDiscount(25);
+        }
+
+        console.log(products);
+
+        /*---------------------------------*/
+
+        class Product {
+            constructor(name, price) {
+                this.name = name;
+                this.price = price;
+                this.make25PercentDiscount = function (discount) {
+                    this.price = this.price - (this.price / 100 * discount);
+                };
+            }
+        }
+
+        const products = [
+            new Product("item1", 250),
+            new Product("item2", 600),
+            new Product("item3", 960)
+        ];
+
+        for (let product of products) {
+            product.make25PercentDiscount(25);
+        }
+
+        console.log(products);
+    </script>
+</body>
+
+
+</html>
