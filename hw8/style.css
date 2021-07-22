@@ -1,0 +1,1707 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* line 1, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/_oftenProperties.sass */
+.mainTextStyle,
+.product__offers_class h1 {
+  font-family: Lato;
+  line-height: 1.2;
+}
+
+/* line 5, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/_oftenProperties.sass */
+.mainButtonHover {
+  background-color: #ffffff;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 11, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/_oftenProperties.sass */
+.secondButtonHover {
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 16, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/_oftenProperties.sass */
+.hoverShadow {
+  box-shadow: 0 0 15px #a4a4a4;
+  transition-duration: 0.3s;
+}
+
+/* line 1, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/_navigation.sass */
+.breadcrump {
+  background-color: #f8f3f4;
+  height: 148px;
+}
+
+/* line 6, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/_navigation.sass */
+.breadcrump__nav {
+  display: flex;
+  list-style-type: none;
+}
+
+/* line 11, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/_navigation.sass */
+.breadC {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 148px;
+}
+
+/* line 18, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/_navigation.sass */
+.breadcrumpH1 {
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+
+/* line 27, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/_navigation.sass */
+.breadcrump__nav_item {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #636363;
+}
+
+/* line 36, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/_navigation.sass */
+.breadcrump__nav_item a:hover {
+  color: #f16d7f;
+}
+
+/* line 10, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+/* line 22, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+header {
+  height: 150px;
+}
+
+/* line 25, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* line 29, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* line 33, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header {
+  min-height: 100px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+/* line 39, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header-right,
+.header-left {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+/* line 46, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__search {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px 3px 3px 3px;
+  height: 38px;
+}
+
+/* line 54, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__search input {
+  height: inherit;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #a4a4a4;
+  width: 279px;
+  padding-left: 18px;
+}
+
+/* line 70, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__search button {
+  width: 35px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  background-color: #fff;
+}
+
+/* line 78, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.search__browse {
+  width: 87px;
+  height: 38px;
+  background-color: #f6f6f6;
+}
+
+/* line 83, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__summary {
+  color: #222;
+  font-weight: 300;
+}
+
+/*-----dropdown menu------------*/
+/* line 89, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__summary {
+  position: relative;
+  height: 38px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 96, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__menu {
+  width: 262px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  z-index: 2;
+  position: absolute;
+  border: 1px solid #e8e8e8;
+}
+
+/* line 105, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__menu_list {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 110, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown_heading {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #232323;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 8px;
+}
+
+/* line 121, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__menu::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  position: absolute;
+  top: -4px;
+  left: 74px;
+  transform: rotate(45deg);
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+
+/* line 134, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__menu_item {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #4f4f4f;
+  transition-duration: 0.3s;
+}
+
+/* line 143, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__menu_item:hover {
+  color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 147, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__summary:-webkit-details-marker {
+  display: none;
+}
+
+/* line 150, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__menu .menu-item {
+  z-index: 1;
+}
+
+/*---------------------------*/
+/* line 155, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__input:focus {
+  color: #222;
+  font-weight: 400;
+  padding: 18px;
+  width: 261px;
+}
+
+/* line 161, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__input:placeholder-shown {
+  padding-left: 18px;
+  font-weight: 300;
+}
+
+/* line 165, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.fa-caret-down {
+  font-family: FontAwesome;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #838383;
+}
+
+/* line 173, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.fa-search {
+  font-family: FontAwesome;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #a4a4a4;
+}
+
+/* line 181, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header-line {
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+}
+
+/* line 185, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.topNav {
+  min-height: 51px;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 193, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.menu-list {
+  display: flex;
+  list-style-type: none;
+}
+
+/* line 197, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.menu-link {
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+}
+
+/* line 201, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.menu-link:hover {
+  color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 205, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.topNav>.menu-list>li:not(:last-child) {
+  margin-right: 48px;
+}
+
+/* line 208, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.topNav>.menu-list>li:not(:last-child) {
+  display: flex;
+}
+
+/*-----mega__menu-----*/
+/* line 213, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.menu-item {
+  position: relative;
+  transition-duration: 0.3s;
+}
+
+/* line 217, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.menu-item:hover .mega__menu {
+  display: flex;
+  z-index: 1;
+  transition-duration: 0.3s;
+}
+
+/* line 222, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.mega__menu {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  position: absolute;
+  display: none;
+  padding: 20px;
+  top: 24px;
+}
+
+/* line 231, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.mega__menu::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  position: absolute;
+  top: -8px;
+  left: 17px;
+  transform: rotate(45deg);
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+
+/* line 244, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.mega__menu_column {
+  margin-right: 46px;
+}
+
+/* line 247, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.mega__menu_column:last-of-type {
+  margin-right: 0;
+}
+
+/* line 250, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.column-heading {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #232323;
+  border-bottom: 1px solid #e8e8e8;
+  width: 235px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+/* line 263, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.mega__menu_item {
+  display: block;
+  color: #646464;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition-duration: 0.3s;
+}
+
+/* line 274, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.mega__menu_item:hover {
+  color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 278, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.mega__menu_img {
+  width: 255px;
+  height: 118px;
+  background-image: url(img/mega_menu.png);
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+/* line 287, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.mega__menu_imgText {
+  width: 71px;
+  height: 45px;
+  font-family: Lato;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+/* line 300, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.last:hover .mega__menu {
+  right: -10px;
+  transition-duration: 0.3s;
+}
+
+/* line 304, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.last .mega__menu::before {
+  left: 800px;
+}
+
+/* line 307, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.middle:hover .mega__menu {
+  right: -400px;
+  transition-duration: 0.3s;
+}
+
+/* line 311, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.middle .mega__menu::before {
+  left: 430px;
+}
+
+/*-----------------*/
+/* line 316, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.brand-logo {
+  display: flex;
+  font-family: Lato;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222222;
+  text-decoration: none;
+}
+
+/* line 327, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.brand-logo span {
+  font-weight: 900;
+  font-family: Lato;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #f16d7f;
+}
+
+/* line 337, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.logo1 {
+  margin-right: 13px;
+}
+
+/* line 340, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.logo2 {
+  margin-right: 37px;
+  margin-top: 15px;
+}
+
+/* line 344, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__cart {
+  width: 32px;
+  height: 29px;
+  margin-right: 26px;
+  position: relative;
+}
+
+/* line 350, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__account {
+  width: 130px;
+  height: 38px;
+  background-color: #f16d7f;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+/* line 358, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__account:hover {
+  background-color: #ffffff;
+  outline: 1px solid #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 363, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__account:hover .header__account-text {
+  color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 367, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__account:hover .fa-caret-down {
+  color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 371, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__account-text {
+  font-family: Lato;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  margin-left: 19px;
+  margin-right: 8px;
+}
+
+/* line 381, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__account .fa-caret-down {
+  font-family: FontAwesome;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+/* line 389, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header__cart span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  color: white;
+  background-color: #f16d7f;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  right: -13px;
+  top: -3px;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+/*---dropdown cart-----*/
+/* line 405, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header-right__cart {
+  position: relative;
+  transition-duration: 0.3s;
+}
+
+/* line 409, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.header-right__cart:hover .dropdown__cart {
+  display: block;
+  transition-duration: 0.3s;
+}
+
+/* line 413, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart {
+  width: 262px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 18px;
+  position: absolute;
+  display: none;
+  border: 1px solid #e8e8e8;
+  top: 40px;
+  left: -30px;
+}
+
+/* line 424, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  position: absolute;
+  top: -8px;
+  left: 42px;
+  transform: rotate(45deg);
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+
+/* line 437, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart_list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(237, 237, 237, 0.74);
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+/* line 444, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart_list:first-child {
+  padding-top: 0;
+}
+
+/* line 447, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart_item {
+  display: flex;
+}
+
+/* line 450, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart_text {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 14px;
+}
+
+/* line 456, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart_text figcaption {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+/* line 464, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.stars {
+  font-family: 'Font Awesome';
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #e4af48;
+}
+
+/* line 472, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item-cart__price {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+
+/* line 479, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item-cart__price span {
+  font-size: 10px;
+}
+
+/* line 482, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart_action {
+  display: flex;
+  align-items: center;
+}
+
+/* line 486, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.fa-times-circle {
+  color: #c0c0c0;
+  transition-duration: 0.3s;
+}
+
+/* line 490, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.fa-times-circle:hover {
+  color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 494, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.cartRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 10px;
+}
+
+/* line 502, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart_total {
+  display: flex;
+  text-align: right;
+  margin-top: 19px;
+  margin-bottom: 19px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+/* line 513, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart_button-link {
+  display: flex;
+}
+
+/* line 516, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart_button {
+  width: 225px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+/* line 532, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart_buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 130px;
+}
+
+/* line 539, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.dropdown__cart_button:hover {
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+  transition-duration: 0.2s;
+}
+
+/* line 544, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.products {
+  display: flex;
+  margin-top: 59px;
+}
+
+/* line 548, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.fa-caret-up {
+  cursor: pointer;
+}
+
+/* line 551, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.category__list {
+  list-style-type: none;
+}
+
+/* line 554, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.category_item a {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 33px;
+  font-weight: 400;
+  color: #6f6e6e;
+  transition-duration: 0.3s;
+}
+
+/* line 562, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.category_item a:hover {
+  color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 566, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.product__category_lower {
+  display: flex;
+  width: 215px;
+  height: 37px;
+  border-left-color: #f16d7f;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-bottom-color: #ebebeb;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-left: 15px;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6f6e6e;
+  align-items: center;
+  margin-bottom: 18px;
+  justify-content: space-between;
+}
+
+/* line 587, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.product__category_lower:hover {
+  color: #f16d7f;
+}
+
+/* line 590, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.fa-caret-down {
+  cursor: pointer;
+}
+
+/* line 593, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features__trending h3 {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6f6e6e;
+}
+
+/* line 601, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features__trending_type {
+  width: 176px;
+  height: 39px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 607, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features__trending_type a {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #6f6e6e;
+  transition-duration: 0.3s;
+}
+
+/* line 615, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features__trending_type span {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #dfdfdf;
+}
+
+/* line 622, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features__trending_type a:hover {
+  color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 626, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.products__list_features {
+  display: flex;
+  justify-content: space-between;
+  width: 846px;
+}
+
+/* line 631, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features_sizebox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 220px;
+}
+
+/* line 636, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features_sizebox input {
+  margin-left: 20px;
+  margin-right: 7px;
+  margin-top: 5px;
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #6f6e6e;
+}
+
+/* line 647, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features_sizebox input:first-child {
+  margin-left: 0;
+}
+
+/* line 650, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features_sizebox input:nth-child(5) {
+  margin-left: 0;
+}
+
+/* line 653, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features_size h3 {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6f6e6e;
+}
+
+/* line 661, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features_price h3 {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6f6e6e;
+}
+
+/* line 669, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.numberRange {
+  width: 262px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 674, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.features_price input {
+  width: 262px;
+}
+
+/* line 677, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.products__list {
+  width: 846px;
+  margin-left: 56px;
+}
+
+/* line 681, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.sorting {
+  width: 846px;
+  height: 50px;
+  background-color: #f3f3f3;
+  margin-top: 40px;
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 690, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.sort_details {
+  width: 85px;
+}
+
+/* line 693, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.sort {
+  width: 153px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+
+/* line 702, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.sort__summary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* line 707, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.sort__summary::marker {
+  color: transparent;
+}
+
+/* line 710, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.show {
+  width: 119px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+
+/* line 719, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.sort__sortBy {
+  border-right: 1px solid #ebebeb;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #6f6e6e;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 731, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.sort__name {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #6f6e6e;
+  text-align: center;
+  width: 95px;
+  height: 30px;
+}
+
+/* line 741, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.sort__name .fa-caret-down {
+  margin-left: 25px;
+}
+
+/* line 744, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item__info {
+  padding: 15px;
+}
+
+/* line 747, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item__info_name {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+/* line 756, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item__info_price {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+
+/* line 764, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.catalogue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+/* line 770, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item {
+  width: 263px;
+  margin-bottom: 40px;
+  position: relative;
+  transition-duration: 0.3s;
+}
+
+/* line 776, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item:hover {
+  box-shadow: 0 0 15px #a4a4a4;
+  transition-duration: 0.3s;
+}
+
+/* line 780, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item-link {
+  display: block;
+  width: 263px;
+  text-decoration: none;
+}
+
+/* line 785, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item__photo {
+  width: 100%;
+  transition-duration: 0.3s;
+}
+
+/* line 789, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item:hover .item__photo {
+  filter: brightness(50%);
+  transition-duration: 0.3s;
+}
+
+/* line 793, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.addCart {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  transition-duration: 0.3s;
+  top: 98px;
+}
+
+/* line 801, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item:hover .addCart {
+  display: flex;
+  transition-duration: 0.3s;
+}
+
+/* line 805, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.addCart-link {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  transition-duration: 0.3s;
+}
+
+/* line 814, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.addCart-link:hover {
+  box-shadow: 0 0 10px #ffffff;
+  transition-duration: 0.3s;
+}
+
+/* line 818, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.item-cart {
+  width: 23px;
+  height: 22px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+/* line 824, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.addCart_text {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* line 831, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.product__pagination_left {
+  width: 261px;
+  height: 44px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 840, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.product__pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+/* line 845, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.pagination_left {
+  display: flex;
+  list-style-type: none;
+  width: 215px;
+  height: 13px;
+  padding: 0;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 854, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.pagination_list .fa-angle-left {
+  font-family: FontAwesome;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #aaaaaa;
+  transition-duration: 0.3s;
+}
+
+/* line 862, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.pagination_list .fa-angle-left:hover {
+  color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 866, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.pagination_list .fa-angle-right {
+  font-family: FontAwesome;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #aaaaaa;
+  transition-duration: 0.3s;
+}
+
+/* line 874, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.pagination_list .fa-angle-right:hover {
+  color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 878, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.pagination_left li a {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #c4c4c4;
+  transition-duration: 0.3s;
+}
+
+/* line 886, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.pagination_left li a:hover {
+  color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 890, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.pagination_left li {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #c4c4c4;
+}
+
+/* line 897, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.product__pagination_right {
+  width: 150px;
+  height: 44px;
+  background-color: #ffffff;
+  border: 1px solid #f16d7f;
+  border-radius: 3px;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #f16d7f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+/* line 913, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.product__pagination_right:hover {
+  background-color: #f16d7f;
+  color: #ffffff;
+  transition-duration: 0.3s;
+}
+
+/* line 918, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.product__offers {
+  width: 100%;
+  height: 341px;
+  background-color: #222224;
+}
+
+/* line 923, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.product {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 90px;
+}
+
+/* line 929, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.product__offers_class h1 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
+  margin-bottom: 17px;
+}
+
+/* line 937, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.product__offers_class p {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
+  width: 310px;
+}
+
+/* line 946, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.product__offers_img {
+  margin-bottom: 23px;
+  width: 51px;
+  height: 44px;
+}
+
+/* line 951, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.footer {
+  width: 100%;
+}
+
+/* line 954, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.customer {
+  width: 100%;
+  height: 438px;
+  background-image: url(img/customerInfo_back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-color: #ababab;
+  background-position-y: bottom;
+}
+
+/* line 964, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.customer__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 968, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.customer__line {
+  width: 1px;
+  height: 438px;
+  background-color: #ffffff;
+}
+
+/* line 973, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.feedback {
+  display: flex;
+  align-items: center;
+}
+
+/* line 977, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.feedback__content {
+  display: flex;
+}
+
+/* line 980, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.feedback__text {
+  margin-left: 28px;
+}
+
+/* line 983, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.feedback__text_description {
+  width: 386px;
+  height: 68px;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.025em;
+  color: #222224;
+  margin-bottom: 19px;
+}
+
+/* line 995, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.feedback__text_name {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #f16d7f;
+}
+
+/* line 1003, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.feedback__text_city {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: #222224;
+}
+
+/* line 1011, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.feedback__line {
+  display: flex;
+  margin-top: 35px;
+}
+
+/* line 1015, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.feedback__line_grey {
+  width: 38px;
+  height: 4px;
+  background-color: #d6d6d6;
+  margin-right: 10px;
+  transition-duration: 0.3s;
+}
+
+/* line 1022, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.feedback__line_grey:hover {
+  width: 38px;
+  height: 4px;
+  background-color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 1028, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.subscribe {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+
+/* line 1033, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.subscribe__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 1038, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.subscribe_upper {
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222224;
+  text-align: center;
+}
+
+/* line 1048, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.subscribe_lower {
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.025em;
+  color: #222224;
+}
+
+/* line 1057, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.subscribe__text {
+  width: 300px;
+  height: 80px;
+  margin-bottom: 35px;
+}
+
+/* line 1062, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.subscribe__field {
+  display: flex;
+  width: 385px;
+  height: 46px;
+}
+
+/* line 1067, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.subscribe__field_button {
+  width: 104px;
+  height: 46px;
+  background-color: #f16d7f;
+  border-radius: 0px 23px 23px 0px;
+  overflow: hidden;
+  border: none;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 54px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+/* line 1086, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.sub_mail {
+  border: none;
+  opacity: 0.67;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 54px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  width: 334px;
+  height: 46px;
+  background-color: #e1e1e1;
+  border-radius: 23px 0px 0px 23px;
+  padding-left: 28px;
+}
+
+/* line 1100, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.sub_mail:focus {
+  outline: none;
+  color: #222;
+}
+
+/* line 1104, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.subscribe__field_button:hover {
+  background-color: #e1e1e1;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+  border-radius: 0px 23px 23px 0px;
+  transition-duration: 0.3s;
+}
+
+/* line 1111, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 109px;
+  margin-bottom: 89px;
+}
+
+/* line 1117, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.footer__brand-text {
+  width: 427px;
+  margin-top: 25px;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #898989;
+}
+
+/* line 1127, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+/* line 1132, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.menu_p {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #f16d7f;
+  margin-bottom: 30px;
+}
+
+/* line 1141, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.list-item a {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  color: #898989;
+}
+
+/* line 1149, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.footerNav .list-item {
+  list-style-type: none;
+}
+
+/* line 1152, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.footerNav .menu_p {
+  list-style-type: none;
+}
+
+/* line 1155, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.footerNav a:hover {
+  color: #f16d7f;
+}
+
+/* line 1158, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.footer__copy {
+  width: 100%;
+  height: 79px;
+  background-color: #e6e6e6;
+}
+
+/* line 1163, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.copy_socials .socials-icon {
+  list-style-type: none;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 1169, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.copy {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 1173, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.copy_rights {
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  color: #7a7a7a;
+  margin-top: 20px;
+}
+
+/* line 1182, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.socials-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 7px;
+  transition-duration: 0.3s;
+}
+
+/* line 1191, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.fa-facebook-f {
+  font-family: FontAwesome;
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #b2b2b2;
+  margin-top: 8px;
+  transition-duration: 0.3s;
+}
+
+/* line 1201, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.fa-twitter {
+  font-family: FontAwesome;
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #b2b2b2;
+  margin-top: 8px;
+  transition-duration: 0.3s;
+}
+
+/* line 1211, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.fa-linkedin-in {
+  font-family: FontAwesome;
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #b2b2b2;
+  margin-top: 8px;
+  transition-duration: 0.3s;
+}
+
+/* line 1221, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.fa-pinterest-p {
+  font-family: FontAwesome;
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #b2b2b2;
+  margin-top: 8px;
+  transition-duration: 0.3s;
+}
+
+/* line 1231, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.fa-google-plus-g {
+  font-family: FontAwesome;
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #b2b2b2;
+  margin-top: 8px;
+  transition-duration: 0.3s;
+}
+
+/* line 1241, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.socials-icon:hover {
+  background-color: #f16d7f;
+  transition-duration: 0.3s;
+}
+
+/* line 1245, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.socials-icon:hover .fa-facebook-f {
+  color: #ffffff;
+  transition-duration: 0.3s;
+}
+
+/* line 1249, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.socials-icon:hover .fa-twitter {
+  color: #ffffff;
+  transition-duration: 0.3s;
+}
+
+/* line 1253, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.socials-icon:hover .fa-linkedin-in {
+  color: #ffffff;
+  transition-duration: 0.3s;
+}
+
+/* line 1257, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.socials-icon:hover .fa-pinterest-p {
+  color: #ffffff;
+  transition-duration: 0.3s;
+}
+
+/* line 1261, ../../OneDrive/Документы/java script lev 1/hw8/style1.sass/style.sass */
+.socials-icon:hover .socials-icon:hover .fa-pinterest-p {
+  color: #ffffff;
+  transition-duration: 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */
